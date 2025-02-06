@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #ecf0f1;
+    font-family: "gilroy", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.contact_container {
+    background-color: #ffffff;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.contactUs_title {
+    padding: 20px;
+}
+
+input, textarea {
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+   
+}
+
+#sub{
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   background-color: #1e90ff;
+   width: 100%;
+   border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+#sub:hover {
+    background-color: #005fbe;
+    cursor: pointer;
+}
+
