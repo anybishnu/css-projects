@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+.view-1 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      span {
+        opacity: 0.6;
+      }
+    }
+  }
+  .bottom {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "a a b b "
+      "a a b b "
+      "a a b b "
+      "a a b b "
+      "a a b b "
+      "a a c c "
+      "a a c c "
+      "a a c c ";
+
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+    .img-a {
+      grid-area: a;
+    }
+    .img-b {
+      grid-area: b;
+      aspect-ratio: initial;
+    }
+    .img-c {
+      grid-area: c;
+      max-height: 10rem;
+    }
+  }
+
+  .bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 130%;
+    height: 82%;
+    background: url(worldMap.jpg) center / cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .button_one {
+    display: none;
+  }
+
+  .button_two {
+    width: 50%;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 2rem;
+  }
+}
+
+.view-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 2rem;
+  margin: 0 auto;
+  position: relative;
+
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .right-text-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 102px;
+    left: 79px;
+    z-index: 1;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000000;
+  }
+
+  .image {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+
+    .images {
+      display: flex;
+      gap: 3rem;
+      width: max-content;
+      justify-content: space-between;
+      
+    }
+  }
+  .image::-webkit-scrollbar {
+    display: none;
+  }
+
+  .images_group {
+    flex: 0 0 auto;
+    aspect-ratio: 1/1;
+    scroll-snap-align: start;
+
+    img {
+      border-radius: 2rem;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+  }
+
+  .button_three {
+    width: 50%;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
+  .addGroup {
+    display: none;
+  }
+}
+
+.view-3 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 2rem;
+      object-fit: cover;
+    }
+
+    .food_drink {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      p {
+        opacity: 0.8;
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+
+    .cardGroup {
+      display: flex;
+      gap: 2rem;
+      padding-top: 2rem;
+
+      img {
+        width: 30%;
+        border-radius: 1rem;
+      }
+
+      .card_info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        p {
+          opacity: 0.8;
+        }
+      }
+    }
+    .button_four {
+      width: 50%;
+      padding: 0.6rem 1rem;
+      border-radius: 2rem;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    .button_five {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 3rem;
+  }
+
+  .view-1 {
+    flex-direction: row;
+    gap: 3rem;
+    .top {
+      width: 50%;
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+      }
+      p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+    }
+    .bottom {
+      width: 50%;
+
+      grid-template-areas:
+        ". . b b "
+        "a a b b "
+        "a a b b "
+        "a a b b "
+        "a a b b "
+        "a a c c "
+        "a a c c "
+        ". . c c ";
+    }
+
+    .button_two {
+      display: none;
+    }
+    .button_one {
+      display: block;
+      width: 50%;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      margin-top: 1rem;
+      border: none;
+      background-color: gray;
+      color: white;
+      border-radius: 2rem;
+    }
+  }
+  .view-2 {
+
+    .images {
+      margin-top: 1rem;
+    }
+    h1 {
+      font-size: 2.3rem;
+    }
+    .button_three {
+      display: none;
+    }
+    .popular {
+      display: none;
+    }
+    .right-text-arrow {
+      display: none;
+    }
+    .addGroup {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+      .button_three_top {
+        padding: 0.5rem 5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .view-3 {
+    flex-direction: row;
+    gap: 2rem;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .bottom {
+      
+      .button_five {
+        padding: 0.5rem 5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        margin-left: auto;
+        display: block;
+
+      }
+      .button_four {
+        display: none;
+      }
+    }
+  }
+}
