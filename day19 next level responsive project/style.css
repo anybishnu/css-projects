@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+main .hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .hero-text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-text .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+}
+main .image-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .image-text .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .image-text .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .image-text .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .image-text .bottom h1 {
+  font-size: 2.8rem;
+  font-weight: 200;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+main .image-text .bottom p {
+  font-size: 1.5em;
+  font-weight: 200;
+  font-family: monospace;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+main .image-text .bottom .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+main .image-text .bottom .services .service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .image-text .bottom .services .service p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+main .vertical-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .vertical-text .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .vertical-text .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .vertical-text .bottom {
+  display: flex;
+  gap: 2.3em;
+}
+main .vertical-text .bottom p {
+  writing-mode: vertical-lr;
+}
+main .vertical-text .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+main .vertical-text .bottom .text h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+main .vertical-text .bottom .text p {
+  writing-mode: initial;
+  line-height: 1.5;
+  font-family: monospace;
+  font-size: 1.5em;
+  opacity: 0.6;
+}
+main .our-services {
+  padding-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 100%;
+  padding-bottom: 2.5em;
+}
+main .our-services .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .our-services .top h1 {
+  font-size: 3.3em;
+  font-weight: 300;
+}
+main .our-services .top .services_group {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .our-services .top .services_group .service_group_one {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .our-services .top .services_group .service_group_two {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .our-services .top .services_group .single_service {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .our-services .top .services_group .single_service hr {
+  opacity: 0.5;
+}
+main .our-services .top .services_group .single_service h2 {
+  font-size: 1.7em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .our-services .top .services_group .single_service p {
+  font-family: monospace;
+  font-size: 1.3em;
+  opacity: 0.5;
+}
+main .our-services .top .services_group .single_service .about_service {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+main .our-services .top .services_group .single_service .about_service .icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 2em;
+}
+main .our-services .top .services_group .single_service .about_service .icon_wrapper .arrow_icon {
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+main .our-services .top .services_group .single_service .about_service p {
+  font-family: monospace;
+  font-size: 1.1em;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .our-services .bottom {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .our-services .bottom img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .selected-work {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .selected-work hr {
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+}
+main .selected-work h1 {
+  font-size: 300%;
+  font-weight: 400;
+  padding-top: 0;
+}
+main .selected-work .work-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+}
+main .selected-work .work-group .work-group-one {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .selected-work .work-group .work-group-one .work-one {
+  aspect-ratio: 1/1;
+  background: url(azure_one.webp);
+  background-position: center;
+}
+main .selected-work .work-group .work-group-one .work-two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .selected-work .work-group .work-group-one .work-two h1 {
+  text-transform: uppercase;
+  font-size: 2.7em;
+}
+main .selected-work .work-group .work-group-one .work-two p {
+  font-size: 1.3em;
+  font-family: monospace;
+  opacity: 0.8;
+}
+main .selected-work .work-group .work-group-one .work-two .about_service {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 1em;
+}
+main .selected-work .work-group .work-group-one .work-two .about_service .icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 2em;
+}
+main .selected-work .work-group .work-group-one .work-two .about_service .icon_wrapper .arrow_icon {
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+main .selected-work .work-group .work-group-one .work-two .about_service p {
+  font-family: monospace;
+  font-size: 1.1em;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .selected-work .work-group .work-group-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2em;
+}
+main .selected-work .work-group .work-group-three .work-one {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .selected-work .work-group .work-group-three .work-one h1 {
+  text-transform: uppercase;
+  font-size: 2.7em;
+}
+main .selected-work .work-group .work-group-three .work-one p {
+  font-size: 1.3em;
+  font-family: monospace;
+  opacity: 0.8;
+}
+main .selected-work .work-group .work-group-three .work-one .about_service {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 1em;
+}
+main .selected-work .work-group .work-group-three .work-one .about_service .icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 2em;
+}
+main .selected-work .work-group .work-group-three .work-one .about_service .icon_wrapper .arrow_icon {
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+main .selected-work .work-group .work-group-three .work-one .about_service p {
+  font-family: monospace;
+  font-size: 1.1em;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .selected-work .work-group .work-group-three .work-two {
+  background-color: blue;
+  color: white;
+  aspect-ratio: 1/1;
+  background: url(sage_two.webp);
+  background-position: center;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+    gap: 4rem;
+    padding-top: 7rem;
+  }
+  main .image-text {
+    flex-direction: row-reverse;
+    gap: 4em;
+  }
+  main .image-text .bottom h1 {
+    font-size: 5em;
+    font-weight: 300;
+  }
+  main .image-text .bottom p {
+    font-size: 1.9em;
+  }
+  main .image-text .bottom .services {
+    margin-top: auto;
+  }
+  main .image-text .bottom .services .service p {
+    font-size: 2em;
+  }
+  main .vertical-text {
+    flex-direction: row;
+    gap: 4em;
+  }
+  main .vertical-text .top {
+    width: 28%;
+  }
+  main .vertical-text .bottom {
+    width: 62%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .vertical-text .bottom .text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  main .vertical-text .bottom .text h1 {
+    font-size: 6.5em;
+    line-height: 0.9em;
+    font-weight: 300;
+    padding-bottom: 0.5em;
+  }
+  main .vertical-text .bottom .text p {
+    margin-top: auto;
+  }
+  main .our-services {
+    flex-direction: row;
+    width: 100%;
+    gap: 3.5em;
+  }
+  main .our-services .top {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+  }
+  main .our-services .top h1 {
+    font-size: 5.9em;
+    font-weight: 300;
+    line-height: 0.9;
+  }
+  main .our-services .top .services_group {
+    flex-direction: row;
+    margin-top: auto;
+  }
+  main .our-services .top .services_group .service_group_one {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2em;
+  }
+  main .our-services .bottom {
+    width: 50%;
+  }
+  main .selected-work {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .selected-work hr {
+    width: calc(100% + 7rem);
+    margin-left: -4rem;
+  }
+  main .selected-work h1 {
+    font-size: 1000%;
+    font-weight: 400;
+    padding-top: 0;
+  }
+  main .selected-work .work-group {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+  }
+  main .selected-work .work-group .work-group-one {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .selected-work .work-group .work-group-one .work-one {
+    background-color: rgb(71, 4, 4);
+    color: white;
+    aspect-ratio: 1/1;
+    background: url(azure_one.webp);
+    background-position: center;
+  }
+  main .selected-work .work-group .work-group-one .work-two {
+    aspect-ratio: 1/1;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  main .selected-work .work-group .work-group-one .work-two h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+  }
+  main .selected-work .work-group .work-group-one .work-two p {
+    font-size: 1.3em;
+    font-family: monospace;
+    opacity: 0.8;
+  }
+  main .selected-work .work-group .work-group-one .work-two .about_service {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: auto;
+  }
+  main .selected-work .work-group .work-group-one .work-two .about_service .icon_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 2em;
+  }
+  main .selected-work .work-group .work-group-one .work-two .about_service .icon_wrapper .arrow_icon {
+    font-size: 1.5em;
+    opacity: 0.5;
+  }
+  main .selected-work .work-group .work-group-one .work-two .about_service p {
+    font-family: monospace;
+    font-size: 1.1em;
+    opacity: 1;
+    text-transform: uppercase;
+  }
+  main .selected-work .work-group .work-group-two {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .selected-work .work-group .work-group-two .work-one {
+    background-color: red;
+    color: white;
+    aspect-ratio: 1/1;
+    background: url(azure_two.webp);
+    background-position: center;
+  }
+  main .selected-work .work-group .work-group-two .work-two {
+    background-color: red;
+    color: white;
+    aspect-ratio: 1/1;
+    background: url(sage_one.webp);
+    background-position: center;
+  }
+  main .selected-work .work-group .work-group-three {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .selected-work .work-group .work-group-three .work-one {
+    aspect-ratio: 1/1;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  main .selected-work .work-group .work-group-three .work-one h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+  }
+  main .selected-work .work-group .work-group-three .work-one p {
+    font-size: 1.3em;
+    font-family: monospace;
+    opacity: 0.8;
+  }
+  main .selected-work .work-group .work-group-three .work-one .about_service {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: auto;
+  }
+  main .selected-work .work-group .work-group-three .work-one .about_service .icon_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 2em;
+  }
+  main .selected-work .work-group .work-group-three .work-one .about_service .icon_wrapper .arrow_icon {
+    font-size: 1.5em;
+    opacity: 0.5;
+  }
+  main .selected-work .work-group .work-group-three .work-one .about_service p {
+    font-family: monospace;
+    font-size: 1.1em;
+    opacity: 1;
+    text-transform: uppercase;
+  }
+  main .selected-work .work-group .work-group-three .work-two {
+    background-color: blue;
+    color: white;
+    aspect-ratio: 1/1;
+    background: url(sage_two.webp);
+    background-position: center;
+  }
+}
